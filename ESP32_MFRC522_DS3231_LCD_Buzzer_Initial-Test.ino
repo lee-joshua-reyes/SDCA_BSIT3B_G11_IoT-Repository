@@ -48,7 +48,7 @@ void setup() {
 
   // Startup screen
   lcd.setCursor(0, 0);
-  lcd.print("DomStaX Attendance");
+  lcd.print("DomStaX");
   lcd.setCursor(0, 1);
   lcd.print("Scan your card");
 }
