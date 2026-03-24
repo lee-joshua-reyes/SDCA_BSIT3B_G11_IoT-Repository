@@ -12,7 +12,7 @@ MFRC522 rfid(SS_PIN, RST_PIN);
 // RTC
 RTC_DS3231 rtc;
 
-// LCD (try 0x27 first, change to 0x3F if needed)
+// LCD 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 // Buzzer
@@ -104,12 +104,12 @@ void loop() {
   delay(200);
   digitalWrite(BUZZER, LOW);
 
-  delay(5000);
+  delay(4000);
 
   // Reset screen
   lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print("Scan your card");
+  lcd.print("DomStaX ID Scan");
   
   rfid.PICC_HaltA();
 }
